@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+.right_nav {z-index: 999999; position:fixed; right:0; bottom:15%; padding:1px 1px 0 1px; text-align: center; color:#ffffff; font-size:16px;
+	line-height:63px;}
+.right_nav a:link, .right_nav a:visited {
+    color: #ffffff;
+}
+	
+.right_nav_item {background: #c5c3c4; width:63px; height: 63px; margin-bottom:1px; float: right; clear: right; position: relative; overflow: hidden;}
+.right_nav_icon {position: absolute; right:0 ; width:63px; height:63px; background-position: center center; background-repeat: no-repeat;}
+.right_nav_icon0 {background-image: url(../../images/dc.png)}
+.right_nav_icon1 {background-image: url(../../images/MarketCartIcon.png)}
+.right_nav_icon2 {background-image: url(../../images/CompareIcon.png)}
+.right_nav_icon3 {background-image: url(../../images/ContectUsIcon.png)}
+.right_nav_icon4 {background-image: url(../../images/ToTopIcon.png)}
+.right_nav_text {margin-right :45px;display: none;}
+
+.right_nav_item:hover , .right_nav_item_select {background: #669900;}
+.item_nav_flex:hover , .right_nav_item_select {width:168px;}
+.right_nav_item:hover .right_nav_text , .right_nav_item_select .right_nav_text{display: block;}
+
+.right_panel {display:none;}
+.right_panel_container { padding: 0 15px;}
+
+.right_panel_top {height:60px; width:100%; font-size:16px; color:#c5c3c4; line-height:60px; position:relative;}
+.rp_top_title {padding-left:15px;}
+.rp_top_close_btn {position: absolute; top:0; right:30px;}
+.rp_close_icon {float:left; width:15px; height:60px;
+	background-image: url(../../images/rCloseBtnIcon.png); background-position: center center; background-repeat:no-repeat;}
+.rp_close_text {float:left; margin-left: 6px;}
+a:link .rp_top_close_btn, a:visited .rp_top_close_btn {color: #c5c3c4;}
+
+.right_panel_division {width:100%; height:1px; background: url(../../images/product_dush.jpg);}
+
+.cartItem {margin-top:10px;}
+.cartItem .cart_item_img {width:67px; height:107px; border: solid 1px #ededed; margin-left: 32px;}
+.cartItem .cart_item_img img {width:100%; height:auto;}
+
+.cart_item_checkbox {margin-top: 50px;}
+.cart_item_checkbox input{position: absolute; left: -40px;}
+.cart_item_checkbox label{display:block; cursor: pointer; width:25px; height:25px; background-image: url(../../images/bigCheckBox.png);}
+label.cart_item_bigcheckbox_checked {background-image: url(../../images/bigCheckBoxChecked.png)}
+
+.cart_content {padding-top: 6px;}
+.cart_item_text {margin-left: 20px; margin-top: 42px;}
+.cart_item_title , .market_cart_check_all_label {width:110px;font-size: 14px; color: #494949;}
+.cart_item_desc , .market_cart_selected_count {font-size: 12px; color: #7e7e7e;}
+
+.cart_item_count_c {float:right; margin-top: 50px;position: absolute; right: 45px;}
+.cart_plus_count_btn , .cart_add_count_btn {width:25px; height:25px; cursor: pointer;}
+.cart_plus_count_btn { background-image: url(../../images/bigPlusBtnEnable.png)}
+.cart_add_count_btn { background-image: url(../../images/bigAddBtnEnable.png)}
+.cart_plus_count_btn_disable { background-image: url(../../images/bigPlusBtnDisable.png)}
+
+.cart_item_count_c .cart_count {width: 30px; text-align:center; font-size: 14px; margin-top: 3px;}
+
+.cart_count_proid , .cart_count_submit_url {display:none;}
+.cartEmptyText {font-size:16px; margin-top:10px;}
+.market_cart_list {padding: 0 22px;}
+
+.market_cart_list_bottom {padding: 0 22px; margin-top: 22px;}
+.market_cart_check_all_label {margin-left: 32px; padding-top: 3px;}
+.market_cart_selected_count {font-size: 14px; padding-top: 3px;}
+
+.cart_button {padding: 0 21px; text-align:center; font-size:18px; margin-top:40px; margin-bottom: 40px;}
+.loginButton {cursor: pointer;width:163px; height:38px; border: solid 1px #6e6e6e; font-size:18px; color: #666666; line-height:40px;}
+.loginBottonInner {width:161px; height:36px; background:#fafafa; border: solid 1px #f2f2f2; font-size:18px; color: #666666; line-height:36px}
+.findPriceBotton {cursor: pointer;margin-left:16px; width:165px; height:40px; background:#d92f30; line-height:40px; color:#ffffff;}
+
+.lxb-container { z-index: 999999 !important;}
+
+.right_panel_wrap {overflow-y: auto; overflow-x: hidden; height: 100%; position: fixed; top:0; right:0; z-index:8888; background: #fafafa;
+	border-left: solid 1px #c0bfc0; border-top: solid 1px #c0bfc0; border-botoom: solid 1px #c0bfc0;}
+
+.right_contect_us_item {width:100%; margin-top: 26px;}
+.right_contect_us_l_bg {background-image: url(../../images/right-nav-icon-background.png); background-position:center center; width:52px; height:52px;
+	margin-left:8px;}
+.right_contect_us_item:hover .right_contect_us_l_bg {background-image: url(../../images/right-nav-icon-sd-background.png);}
+.right_contect_us_r {margin-left: 11px;}
+.r_contect_us_r_title {font-size: 18px; color:#666666; padding-top: 4px;}
+.r_contect_us_r_desc {font-size: 14px; color:#999999; padding-top: 2px;}
+.right_contect_us_content {margin-top:32px;}
+
+.cart_item_img_part_style {padding-top:23px;}
+
+.right_contect_us_message_icon {width:52px; height:52px;background-image: url(../../images/message-icon.png); background-position:center center;
+	background-repeat: no-repeat;}
+.right_contect_us_search_icon {width:52px; height:52px;background-image: url(../../images/nav-search-icon.png); background-position:center center;
+	background-repeat: no-repeat;}
+.right_contect_us_question_icon {width:52px; height:52px;background-image: url(../../images/nav-question-icon.png); background-position:center center;
+	background-repeat: no-repeat;}
+.right_contect_us_buyonline_icon {width:52px; height:52px;background-image: url(../../images/MarketCartIconS.png); background-position:center center;
+	background-repeat: no-repeat;}
+	
+.loginButtonSpace {width:163px; height:38px;}
+
+.right_nav a {display:block;}
+
+@media (max-width: 657px) {
+	.right_nav {display:none};
+	.cart_choose_more_btn {float:left; margin-top:10px;}
+}
+
+@media (max-width: 423px) {
+	.cart_item_count_c { position: relative; right:0; margin-bottom: 50px;}
+	.loginBottonInner {width: 100%;box-sizing: border-box;}
+	.loginButton { margin-bottom:15px;}
+	.loginButtonSpace , .loginButton {width: 100%;}
+	.findPriceBotton {width:100%; margin-left:0; margin-bottom:30px;}
+	.cart_button { margin-top: 20px;}
+}
+
