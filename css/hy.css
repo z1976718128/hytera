@@ -118,11 +118,11 @@ a.active {
   min-width: 206px;
   height: 46px;
   line-height: 46px;
-  border: 1px solid #038fcb;
+  border: 1px solid #88AB2D;
   border-radius: 23px;
-  background-color: #038fcb;
+  background-color: #88AB2D;
   font-size: 20px;
-  color: #fff;
+  color: #fff !important;
   text-align: center;
   display: inline-block;
   text-decoration: none;
@@ -157,13 +157,13 @@ a.active {
 
 .section-title::before,
 .section-title::after {
-  content: '';
+  /*content: '';
   display: block;
   width: 27%;
   height: 2px;
   background-color: #ccc;
   position: absolute;
-  top: 50%;
+  top: 50%;*/
 }
 
 .section-title::before { left: 0; }
@@ -269,7 +269,7 @@ a.active {
   left: -23px;
   background-image: url(../img/swiper-left.png);
   width: 14px;
-  height: 26px;
+  /*height: 26px;*/
   padding: 7px 13px;
   background-size: 14px 26px;
   background-position: 13px 7px;
@@ -280,7 +280,7 @@ a.active {
   right: -23px;
   background-image: url(../img/swiper-next.png);
   width: 14px;
-  height: 26px;
+  /*height: 26px;*/
   padding: 7px 13px;
   background-size: 14px 26px;
   background-position: 13px 7px;

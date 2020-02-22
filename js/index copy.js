@@ -133,14 +133,14 @@ $(document).ready(function () {
     e.preventDefault();
     var formData = {};
     formData.first_name = $('#d_first_name').val();
-    formData.phone = $('#d_phone').val();
+    formData.last_name = $('#d_last_name').val();
     formData.email = $('#d_email').val();
     formData.company = $('#d_company').val();
-    formData.city = $('#d_city').val();
-    formData.campaign = 'Multi-mode-cn';
-    formData.campaign_id = '7017F000000nA5EQAU';
+    formData.country = $('#d_country').val();
+    formData.campaign = '2019-poc-en';
+    formData.campaign_id = '7017F000000Hp8tQAC';
 
-    if (!formData.first_name || !formData.phone || !formData.email || !formData.company || !formData.city) {
+    if (!formData.first_name || !formData.last_name || !formData.email || !formData.company || !formData.country) {
       alert('Please fill in the required areas.')
       return;
     }
@@ -183,21 +183,21 @@ $(document).ready(function () {
     e.preventDefault();
     var formData = {};
     formData.first_name = $('#a_first_name').val();
-    formData.company = $('#a_company').val();
-    formData.phone = $('#a_phone').val();
+    formData.last_name = $('#a_last_name').val();
     formData.email = $('#a_email').val();
-    formData.city = $('#a_city').val();
+    formData.company = $('#a_company').val();
+    formData.a_country = $('#a_country').val();
     formData.description = $('#a_description').val();
-    formData.campaign = 'Multi-mode-cn';
-    formData.campaign_id = '7017F000000nA5EQAU';
+    formData.campaign = '2019-poc-en';
+    formData.campaign_id = '7017F000000Hp8tQAC';
 
-    if (!formData.first_name || !formData.phone || !formData.email || !formData.company || !formData.city|| !formData.description  ) {
-      alert('请完整填写表单.')
+    if (!formData.first_name || !formData.last_name || !formData.email || !formData.company || !formData.a_country) {
+      alert('Please fill in the required areas.')
       return;
     }
 
     if (!formData.email.match(emailRegEx)) {
-      alert('请填写正确邮箱.')
+      alert('Please fill in the correct email.')
       return;
     }
 
