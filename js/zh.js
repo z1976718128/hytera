@@ -5,7 +5,7 @@ $(function(){
 		console.log($(this).index())
 	})
 	$(window).resize(function(){
-		console.log(innerWidth)
+
 		if (innerWidth<750) {
 			$(".cppa").hide();
 			$(".cppb").show();

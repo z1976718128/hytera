@@ -14,6 +14,7 @@
 		<link href="css/common/moveMenu.css" type="text/css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/cn.css">
 		<link rel="stylesheet" href="css/hy.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	</head>
 
 	<body style="left: 0;" class="page">
@@ -680,24 +681,14 @@
 			<div class="applys video-item" data-id="r0894ydtxah"></div>
 			<div class="banner_ljgm btn-apply">立即购买</div>
 		</div>-->
-		<!--<div class="swiper-container banner-swiper">
+		<div class="swiper-container banner-swiper">
 		    <div class="swiper-wrapper">
 		        <div class="swiper-slide " id="banner">
 					<div class="applys video-item" data-id="r0894ydtxah"></div>
 					<div class="banner_ljgm btn-apply">立即购买</div>
 		        </div>
 		    </div>
-		</div>-->
-		<section class="swiper-container banner-swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide banner-item" id="banner-1">
-        <div class="container">
-        	<div class="applys video-item" data-id="r0894ydtxah"></div>
-			<div class="banner_ljgm btn-apply">立即购买</div>
-        </div>
-      </div>
-    </div>
-  </section>
+		</div>
 		<!-- BANNER -->
 
 		<!-- 执法记录仪 -->
@@ -1298,6 +1289,8 @@
 		<script src="js/index-new.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/zh.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/hy.js"></script>
+		<script src="js/slider.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hammer.min.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			$(function() {
 				let zfcpSwiper = new Swiper('#zfcpSwiper', {
@@ -1346,11 +1339,12 @@
 					breakpoints: {
 						768: { //当屏幕宽度小于等于768
 							slidesPerView: 1,
-							spaceBetween: 20,
+						},
+						768: { //当屏幕宽度小于等于768
+							slidesPerView: 1,
 						},
 						320: { //当屏幕宽度小于等于320
 							slidesPerView: 1,
-							spaceBetween: 10,
 						}
 					}
 				});
@@ -1426,7 +1420,20 @@
 				})
 				let bannerSwiper = new Swiper('.banner-swiper', {
 			      loop: true, // 循环模式选项
+			      autoplay: {
+						delay: 2000,
+					},
+					breakpoints: {
+						768: { //当屏幕宽度小于等于768
+							slidesPerView: 1,
+						},
+					}
 			    });
+		   		$(window).resize(function(){
+		   			if( innerWidth <= 1366){
+//		   				background-position-x: -300px;
+		   			}
+		   		})
 			})
 		</script>
 
