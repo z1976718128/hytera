@@ -2,9 +2,9 @@
 	height: 803px;
 	width: 100%;
 	background: url(../img/banner.jpg)no-repeat;
-	background-size: contain;
+	background-size: cover;
 	background-position-y: 56px;
-	position: relative;
+	/*position: relative;*/
 }
 .gm {
 	width: 254px;
@@ -30,12 +30,13 @@
 	border-radius: 28px;
 	position: absolute;
 	left: 50%;
-	bottom: 50px;
+	bottom: -500px;
 	transform: translateX(-50%);
 	text-align: center;
 	color: #fff;
 	font-size: 24px;
 	font-weight: 400;
+	display: inline-block;
 }
 
 #zf {
@@ -144,7 +145,7 @@
 }
 
 .zfcp .cpms {
-	width: 234px;
+	width:300px;
 	height: 80px;
 	font-size: 16px;
 	font-weight: 400;
@@ -254,8 +255,9 @@
 	background-size: contain;
 	background-position: center center;
 	position: absolute;
-	top: 50%;
-	left: 28%;
+	top: 300px;
+    left: 200px;
+	display: inline-block;
 }
 @media (max-width:750px) {
 	#banner {
@@ -368,4 +370,10 @@
     top: 40vw;
     height: 30vw;
 	}
+	.hx2{
+		    margin: 20px auto 30px;
+	}
+	.mart {
+    margin: 20px 0 30px 0;
+}
 }

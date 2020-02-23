@@ -371,7 +371,7 @@ body{
   width: 20%;
 }
 .video-item:hover >p{
-	color:#07FBF1  ;
+	/*color:#07FBF1  ;*/
 }
 
 .video-item p {

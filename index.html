@@ -676,10 +676,28 @@
 		</div>
 		<!--右边menu-->
 		<!-- BANNER -->
-		<div id="banner">
+		<!--<div id="banner">
 			<div class="applys video-item" data-id="r0894ydtxah"></div>
 			<div class="banner_ljgm btn-apply">立即购买</div>
-		</div>
+		</div>-->
+		<!--<div class="swiper-container banner-swiper">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide " id="banner">
+					<div class="applys video-item" data-id="r0894ydtxah"></div>
+					<div class="banner_ljgm btn-apply">立即购买</div>
+		        </div>
+		    </div>
+		</div>-->
+		<section class="swiper-container banner-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide banner-item" id="banner-1">
+        <div class="container">
+        	<div class="applys video-item" data-id="r0894ydtxah"></div>
+			<div class="banner_ljgm btn-apply">立即购买</div>
+        </div>
+      </div>
+    </div>
+  </section>
 		<!-- BANNER -->
 
 		<!-- 执法记录仪 -->
@@ -1285,7 +1303,7 @@
 				let zfcpSwiper = new Swiper('#zfcpSwiper', {
 					loop: true, // 循环模式选项
 					autoplay: {
-						delay: 5000,
+						delay: 2000,
 					},
 					slidesPerView: 4,
 					spaceBetween: 23,
@@ -1303,7 +1321,7 @@
 				let zglSwiper = new Swiper('#zglSwiper', {
 					loop: true, // 循环模式选项
 					autoplay: {
-						delay: 5000,
+						delay: 2000,
 					},
 					slidesPerView: 3,
 					// spaceBetween:23,
@@ -1321,7 +1339,7 @@
 				let djSwiper = new Swiper('#djSwiper', {
 					loop: true, // 循环模式选项
 					autoplay: {
-						delay: 5000,
+						delay: 2000,
 					},
 					slidesPerView: 2,
 					spaceBetween: 26,
@@ -1339,7 +1357,7 @@
 				let caseSwiper = new Swiper('.case-swiper', {
 					loop: true, // 循环模式选项
 					autoplay: {
-						delay: 5000,
+						delay: 2000,
 					},
 					pagination: {
 						el: '.case-swiper .swiper-pagination',
@@ -1352,7 +1370,7 @@
 				let imageSwiper = new Swiper('.image-swiper', {
 					loop: true, // 循环模式选项
 					autoplay: {
-						delay: 5000,
+						delay: 2000,
 					},
 					slidesPerView: 3,
 					spaceBetween: 34,
@@ -1362,11 +1380,11 @@
 					},
 					breakpoints: {
 						768: { //当屏幕宽度小于等于768
-							slidesPerView: 3,
+							slidesPerView: 1,
 							spaceBetween: 20,
 						},
 						320: { //当屏幕宽度小于等于320
-							slidesPerView: 2,
+							slidesPerView:1,
 							spaceBetween: 10,
 						}
 					}
@@ -1375,7 +1393,7 @@
 				let videoSwiper = new Swiper('.video-swiper', {
 					loop: true, // 循环模式选项
 					autoplay: {
-						delay: 5000,
+						delay: 2000,
 					},
 					slidesPerView: 3,
 					spaceBetween: 34,
@@ -1385,11 +1403,11 @@
 					},
 					breakpoints: {
 						768: { //当屏幕宽度小于等于768
-							slidesPerView: 3,
+							slidesPerView: 1,
 							spaceBetween: 20,
 						},
 						320: { //当屏幕宽度小于等于320
-							slidesPerView: 2,
+							slidesPerView: 1,
 							spaceBetween: 10,
 						}
 					}
@@ -1406,7 +1424,9 @@
 					$('#iframe').attr('src', '');
 					$(this).hide()
 				})
-
+				let bannerSwiper = new Swiper('.banner-swiper', {
+			      loop: true, // 循环模式选项
+			    });
 			})
 		</script>
 
